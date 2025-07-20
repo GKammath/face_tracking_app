@@ -9,6 +9,8 @@ declare module 'face-api.js' {
   }
 
   export interface FaceDetection {
+    score: number;
+    box: any;
     detection: any;
     landmarks?: FaceLandmarks68;
     expressions?: FaceExpressions;
